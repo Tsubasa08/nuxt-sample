@@ -1,13 +1,14 @@
 <template>
-  <h1>Topページ</h1>
-  <button @click="enableCustomLayout">Update layout</button>
+  <div>
+    <NuxtLayout name="default">
+      <template #header>ヘッダー</template>
+      <h1>Main Page</h1>
+      <img src="~/assets/icon.ico" alt="" />
+    </NuxtLayout>
+  </div>
 </template>
 
 <script setup>
-const route = useRoute();
-const enableCustomLayout = () => {
-  route.meta.layout = "custom";
-};
 definePageMeta({
   layout: false,
 });

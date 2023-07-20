@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav>ここにナビゲーションバーを入れる</nav>
+    <Navbar />
     <slot />
   </div>
 </template>
