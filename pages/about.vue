@@ -6,4 +6,13 @@
 definePageMeta({
   middleware: "auth",
 });
+useHead({
+  title: "Aboutページ",
+  meta: [
+    {
+      name: "description",
+      content: "Aboutページ",
+    },
+  ],
+});
 </script>
