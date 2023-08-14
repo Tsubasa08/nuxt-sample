@@ -1,18 +1,15 @@
 <template>
-  <h1>Aboutページ</h1>
+  <div>
+    <head>
+      <title>Aboutページ</title>
+      <meta name="discription" content="Aboutページ" />
+    </head>
+    <h1>About Page</h1>
+    <h2>Counter</h2>
+    <p>Count: {{ counter }}</p>
+    <div><button @click="counter++">+</button></div>
+  </div>
 </template>
-
 <script setup>
-definePageMeta({
-  middleware: "auth",
-});
-useHead({
-  title: "Aboutページ",
-  meta: [
-    {
-      name: "description",
-      content: "Aboutページ",
-    },
-  ],
-});
+const counter = useCounter();
 </script>
